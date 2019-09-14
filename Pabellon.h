@@ -30,10 +30,10 @@ public:
 	Pabellon();
 
 	void asignarPacientes(Paciente &);
-
+	std::string imprimirPabellonPacientes(int);
 	
 
 };
 
 
-#endif //EJERCICIOSPUNTEROSVECTORES_PABELLON_H
+#endif //HOSPITAL_PABELLON_H

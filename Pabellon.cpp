@@ -26,3 +26,12 @@ void Pabellon::asignarPacientes(Paciente &paciente)
 
 }
 
+std::string Pabellon::imprimirPabellonPacientes(int pos)
+{
+	std::string reporte = "";
+
+	reporte = reporte + pacientes.at(pos).imprimirPaciente();
+
+		return reporte;
+}
+
