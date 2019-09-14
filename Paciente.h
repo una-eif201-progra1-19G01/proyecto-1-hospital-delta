@@ -78,25 +78,7 @@ public:
 	std::string imprimirDoctorPacientes();
 
 
-
-
-
-
-
-
-
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
