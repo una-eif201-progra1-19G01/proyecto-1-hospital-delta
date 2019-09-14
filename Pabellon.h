@@ -29,15 +29,9 @@ class Pabellon {
 public:
 	Pabellon();
 
-	Pabellon(int tamano);
-
-
-	virtual ~Pabellon();
-
-
 	void asignarPacientes(Paciente &);
 
-	std::string imprimirPabellon();
+	
 
 };
 

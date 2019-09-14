@@ -18,14 +18,6 @@
 
 Pabellon::Pabellon() {}
 
-Pabellon::Pabellon() {
-
-}
-
-Pabellon::~Pabellon() {
-	
-}
-
 
 void Pabellon::asignarPacientes(Paciente &paciente)
 {
@@ -34,8 +26,3 @@ void Pabellon::asignarPacientes(Paciente &paciente)
 
 }
 
-std::string Pabellon::imprimirPabellon() {
-	std::string reporteCamas;
-
-
-}
