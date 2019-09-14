@@ -42,8 +42,11 @@ int main() {
 	Doctor doctor1;
 	std::vector<Doctor> doctores;
 
-	Pabellon pabellon1;
+	Pabellon pabellonM;
+	Pabellon pabellonF;
 	std::vector<Pabellon> pabellones;
+
+	std::string letras[10] = {"A","B","C","D","E","F","G","H","I","J"};
 
 	int opcion = 0;
 	std::string palabra;
@@ -146,8 +149,9 @@ int main() {
 						paciente1.setPrioridad(palabra);
 						std::cout << "Digite la fecha de la cirugia: " << std::endl;
 						std::cout << std::endl;
-						std::cin >> palabra;
-						paciente1.setFechaCirugia(palabra);
+						std::cin.ignore();
+						std::cin.getline(cadena, 100, '\n');
+						paciente1.setFechaCirugia(cadena);
 						pacientes.push_back(paciente1);
 						tamanoPaciente++;
 					}
@@ -191,7 +195,10 @@ int main() {
 						for (int _contpac = 0; _contpac < pacientes.capacity(); _contpac++)
 						{
 							std::cout << pacientes.at(_contpac).imprimirPaciente() << std::endl;
+							std::cout << pacientes.at(_contpac).imprimirDoctorPacientes(seleccione) << std::endl;
 						}
+
+
 
 					}
 					else
