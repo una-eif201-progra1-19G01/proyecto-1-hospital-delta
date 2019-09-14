@@ -44,11 +44,6 @@ std::string Doctor::getEspecialidad()
 	return especialidad;
 }
 
-void Doctor::asignarPaciente(Paciente &paciente)
-{
-	pacientes.push_back(paciente);
-	tamanoPacientes++;
-}
 
 
 std::string Doctor::imprimirDoctor()
@@ -56,18 +51,6 @@ std::string Doctor::imprimirDoctor()
 	std::string reporte = "";
 
 	reporte = reporte + "NomDoc [" + getNombre() + "] espe [" + getEspecialidad() + "]";
-	return reporte;
-}
-
-std::string Doctor::imprimirPacientesDoc()
-{
-	std::string reporte = "";
-
-	for (int cont = 0; cont < tamanoPacientes; cont++)
-	{
-		reporte = reporte + "Paciente " + std::to_string(cont) + "[" + pacientes.at(cont).imprimirPaciente() + "]\n";
-	}
-
 	return reporte;
 }
 

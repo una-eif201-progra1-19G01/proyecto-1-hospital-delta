@@ -226,7 +226,7 @@ int main() {
 						}
 						std::cout << "Seleccione al doctor que quiere que se encargue del paciente" << std::endl;
 						std::cin >> seleccione2;
-						doctores.at(seleccione2).asignarPaciente(pacientes.at(seleccione));
+						pacientes.at(seleccione).asignarDoctor(doctores.at(seleccione2));
 					}
 
 					else
@@ -258,7 +258,6 @@ int main() {
 				std::cout << "1-Agregar un doctor: " << std::endl;
 				std::cout << "2-Eliminar un doctor: " << std::endl;
 				std::cout << "3-Imprimir lista de doctores" << std::endl;
-				std::cout << "4-Imprimir lista de pacientes del doctor" << std::endl;
 				std::cout << "7-Volver al menu principal" << std::endl;
 				std::cout << "9- Salir del programa" << std::endl;
 				std::cout << "Digite el numero de su opcion: " << std::endl;
@@ -342,17 +341,6 @@ int main() {
 					{
 						std::cout << "No hay doctores registrados" << endl;
 					}
-					break;
-
-				case 4:
-					for (int recorre = 0; recorre < tamanoDoctor; recorre++)
-					{
-						std::cout << doctores.at(recorre).imprimirDoctor() << std::endl;
-					}
-					std::cout << "Seleccione al doctor al que le quiere ver la lista de pacientes" << std::endl;
-					std::cin >> numero;
-					std::cout << doctores.at(numero).imprimirPacientesDoc() << std::endl;
-
 					break;
 
 				case 9:
